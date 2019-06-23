@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>
+        Kitt3hs
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<H1> Kitt3hs </H1>
+<div th:each="c : ${cats}">
+
+    <div>
+        <b th:text="${c.id}">ID</b> -
+        <span th:text="${c.name}">Name</span>
+    </div>
+</div>
+</body>
+</html>
